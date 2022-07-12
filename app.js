@@ -57,6 +57,7 @@ function animateSlides() {
       .addTo(controller);
   });
 }
+
 const mouse = document.querySelector(".cursor");
 const mouseTxt = mouse.querySelector("span");
 const burger = document.querySelector(".burger");
@@ -85,6 +86,7 @@ function activeCursor(e) {
     gsap.to(".title-swipe", 1, { y: "100%" });
   }
 }
+
 function navToggle(e) {
   if (!e.target.classList.contains("active")) {
     e.target.classList.add("active");

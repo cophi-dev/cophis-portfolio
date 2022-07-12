@@ -192,6 +192,7 @@ function detailAnimation() {
       duration: "100%",
       triggerHook: 0,
     })
+
       .setPin(slide, { pushFollowers: false })
       .setTween(slideTl)
       // .addIndicators({

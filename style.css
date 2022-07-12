@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.badges img {
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 body {
   background: #17181a;
   font-family: "Montserrat", sans-serif;
@@ -262,8 +270,7 @@ body.hide {
 .project3,
 .project4,
 .project5,
-.project6,
-.projectitem {
+.project6 {
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -398,9 +405,15 @@ a:hover {
     line-height: 1.7rem;
     width: 90vw;
     margin: auto;
+    margin-bottom: 3rem;
   }
+
+  .project-text h1 {
+    margin-bottom: 1rem;
+  }
+
   .project-img img {
-    height: 30vh;
+    height: 50vh;
     object-position: top;
   }
 
@@ -448,17 +461,35 @@ a:hover {
   .explore {
     width: 60%;
     margin: auto;
+    padding: 0.7rem;
   }
+
+  .explore a {
+    font-size: 10rem;
+  }
+
   .detail-slide {
     width: 100%;
     text-align: center;
   }
   .project-text p {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
     padding: 0;
   }
+
+  .project-text {
+    margin: 0rem;
+  }
   .project-text h1 {
-    margin: 2rem 0rem;
+    font-size: 3rem;
+    margin: 1rem 0rem;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: auto;
   }
 
   .nav-bar {

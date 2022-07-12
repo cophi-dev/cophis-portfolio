@@ -38,7 +38,7 @@ function animateSlides() {
     const pageTl = gsap.timeline();
     let nextSlide = slides.length - 1 === index ? "end" : slides[index + 1];
     pageTl.fromTo(nextSlide, { y: "0%" }, { y: "50%" });
-    pageTl.fromTo(slide, { opacity: 1, scale: 1 }, { opacity: 0, scale: 1 });
+    pageTl.fromTo(slide, { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.5 });
     pageTl.fromTo(nextSlide, { y: "50%" }, { y: "0%" }, "-=0.5");
     //Create new scene
     pageScene = new ScrollMagic.Scene({
@@ -67,10 +67,9 @@ function cursor(e) {
 function activeCursor(e) {
   const item = e.target;
   if (
-    item.id === "logo" ||
+    item.classList.contains("logo") ||
     item.classList.contains("burger") ||
-    item.id === "contact-burger-text" ||
-    item.id === "outro"
+    item.id === "contact-burger-text"
   ) {
     mouse.classList.add("nav-active");
   } else {
@@ -91,7 +90,7 @@ function navToggle(e) {
     e.target.classList.add("active");
     gsap.to(".line1", 0.5, { rotate: "45", y: 5, background: "black" });
     gsap.to(".line2", 0.5, { rotate: "-45", y: -5, background: "black" });
-    gsap.to("#logo", 1, { color: "black" });
+    gsap.to(".logo", 1, { color: "black" });
     gsap.to("#contact-burger-text", 1, { scale: "0", color: "black" });
     gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
     document.body.classList.add("hide");
@@ -99,7 +98,7 @@ function navToggle(e) {
     e.target.classList.remove("active");
     gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "white" });
     gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "white" });
-    gsap.to("#logo", 1, { color: "white" });
+    gsap.to(".logo", 1, { color: "white" });
     gsap.to("#contact-burger-text", 1, { scale: "1", color: "white" });
     gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
     document.body.classList.remove("hide");
@@ -107,7 +106,7 @@ function navToggle(e) {
 }
 
 //Barba Page Transitions
-const logo = document.querySelector("#logo");
+const logo = document.querySelector(".logo");
 barba.init({
   views: [
     {
@@ -184,7 +183,7 @@ function detailAnimation() {
     const nextImg = nextSlide.querySelector("img");
     slideTl.fromTo(slide, { opacity: 1 }, { opacity: 0 });
     slideTl.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, "-=1");
-    slideTl.fromTo(nextImg, { x: "50%" }, { x: "0%" });
+    slideTl.fromTo(nextImg, { x: "50%" }, { x: "0%" }), "-=0.5";
     //Scene
     detailScene = new ScrollMagic.Scene({
       triggerElement: slide,

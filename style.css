@@ -198,6 +198,7 @@ main {
   background: #17181a;
   left: 0;
   top: -20%;
+  overflow: hidden;
 }
 
 .cursor {
@@ -261,7 +262,8 @@ body.hide {
 .project3,
 .project4,
 .project5,
-.project6 {
+.project6,
+.projectitem {
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -299,6 +301,7 @@ body.hide {
   border-radius: 2rem;
   margin-top: 3rem;
   object-position: center;
+  overflow: hidden;
 }
 
 .s-text h1 {

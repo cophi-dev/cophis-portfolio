@@ -185,7 +185,7 @@ function detailAnimation() {
     const nextImg = nextSlide.querySelector("img");
     slideTl.fromTo(slide, { opacity: 1 }, { opacity: 0 });
     slideTl.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, "-=1");
-    slideTl.fromTo(nextImg, { x: "50%" }, { x: "0%" }), "-=0.5";
+    slideTl.fromTo(nextImg, { x: "0%" }, { x: "0%" }), "-=0.5";
     //Scene
     detailScene = new ScrollMagic.Scene({
       triggerElement: slide,

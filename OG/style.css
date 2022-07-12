@@ -17,7 +17,6 @@ main {
 #logo {
   color: white;
   font-family: "Abril Fatface";
-  cursor: none;
 }
 .nav-header {
   min-height: 10vh;
@@ -29,7 +28,7 @@ main {
   width: 80%;
   margin: auto;
   padding: 2rem 0rem;
-  z-index: 50;
+  z-index: 2;
   position: relative;
 }
 .line1,
@@ -73,38 +72,26 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px;
-}
-#svg {
-  object-fit: fill;
 }
 
-.profile-span {
+.fashion-span {
+  color: rgb(255, 139, 93);
+}
+.mountain-span {
   color: rgb(86, 124, 228);
 }
 
-.projects-span {
-  color: rgb(167, 110, 231);
-}
-.project1-span {
+.hike-span {
   color: rgb(167, 110, 231);
 }
 .hero-desc h2 {
   font-family: "Abril Fatface";
-  font-size: 3rem;
-}
-.hero-desc h1 {
-  font-family: "Abril Fatface";
   font-size: 5rem;
-  align-items: center;
-  color: white;
 }
-
 .hero-desc p {
   padding: 3rem 0rem;
   font-size: 1.5rem;
   color: rgb(223, 223, 223);
-  line-height: 2rem;
 }
 .explore {
   padding: 1rem 2rem;
@@ -112,24 +99,10 @@ main {
   border: none;
   color: white;
   border: 1px solid white;
-  border-radius: 10rem;
   font-size: 1rem;
   text-decoration: none;
   align-self: flex-start;
-  cursor: none;
-  margin-right: 2rem;
-}
-.infos a {
-  padding: 1rem 2rem;
-  background: none;
-  color: white;
-  border: 1px solid white;
-  border-radius: 10rem;
-  font-size: 1rem;
-  text-decoration: none;
-  align-self: flex-start;
-  cursor: none;
-  margin-right: 2rem;
+  cursor: pointer;
 }
 .nav-bar {
   position: fixed;
@@ -147,7 +120,7 @@ main {
   -webkit-clip-path: circle(50px at 100% -10%);
 }
 .burger {
-  cursor: none;
+  cursor: pointer;
 }
 .nav-links {
   font-size: 3rem;
@@ -181,7 +154,7 @@ main {
 .cursor {
   width: 3rem;
   height: 3rem;
-  border: 0px solid white;
+  border: 2px solid white;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -193,10 +166,9 @@ main {
 .cursor.nav-active {
   background: rgb(86, 124, 228);
   transform: scale(3);
-  z-index: 10;
 }
 .cursor.explore-active {
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   transform: scale(3);
 }
 .cursor-text {
@@ -237,145 +209,62 @@ body.hide {
 }
 
 /* Other Pages */
-/* .project1,
-.project2,
-.project3,
-.project4 {
-  min-height: 90vh;
+.fashion1,
+.fashion2,
+.fashion3 {
+  /* min-height: 90vh; */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 70%;
   margin: auto;
   color: white;
-  margin-top: 1rem;
+  margin-top: 5rem;
   flex-wrap: wrap;
   position: relative;
 }
-.project-img {
-  position: relative;
-  flex: 1;
-  flex-basis: 10rem;
-  overflow: hidden;
-}
-.project-text {
-  position: relative;
-}
-.project-img img {
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.project1 h1,
-.project2 h1,
-.project3 h1,
-.project4 h1 {
-  font-family: "Abril Fatface";
-  font-size: 3rem;
-  padding: 2rem 0rem;
-}
-
-.project1 h1 {
-  color: rgb(255, 139, 93);
-}
-.project2 h1 {
-  color: rgb(167, 110, 231);
-}
-.project3 h1 {
-  color: rgb(86, 124, 228);
-}
-.project4 h1 {
-  color: rgb(178, 171, 74);
-}
-
-.project-text p {
-  font-size: 1.3rem;
-  padding: 2rem 2rem 0rem 0rem;
-  margin-bottom: 10rem;
-} */
-
-.project1,
-.project2,
-.project3,
-.project4,
-.project5,
-.project6 {
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-  color: white;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-  position: relative;
-}
-.project-img {
+.fashion-img {
   height: 70vh;
-  flex-basis: 40rem;
+  flex-basis: 30rem;
 }
-.project-text {
+.fashion-text {
   flex: 1;
   position: relative;
   flex-basis: 25rem;
 }
-.project-img img {
+.fashion-img img {
   width: 100%;
-  height: 60%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 2rem;
-  margin-top: 3rem;
-  object-position: center;
 }
 
-.project-text h1 {
-  font-size: 3rem;
-  font-family: "Abril Fatface";
-
+.fashion-text h1 {
+  font-size: 6rem;
   padding: 5rem 0rem;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-text h2 {
-  font-size: 5rem;
-  font-family: "Abril Fatface";
-  align-items: center;
-  color: white;
-}
-
-.project1 h1 {
+.fashion1 h1 {
   color: rgb(255, 139, 93);
 }
-.project2 h1 {
+.fashion2 h1 {
   color: rgb(167, 110, 231);
 }
-.project3 h1 {
+.fashion3 h1 {
   color: rgb(86, 124, 228);
 }
-.project4 h1 {
-  color: rgb(228, 86, 86);
-}
-.project5 h1 {
-  color: rgb(70, 155, 58);
-}
-.project6 h1 {
-  color: white;
-}
 
-.project-text p {
-  font-size: 1.5rem;
+.fashion-text p {
+  font-size: 2rem;
   padding: 2rem 2rem 0rem 0rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
+}
+.fashion-nr {
+  font-size: 15rem;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  color: white;
+  opacity: 0.2;
 }
 
 .swipe {
@@ -384,45 +273,33 @@ body.hide {
   height: 100%;
   top: 0;
   left: 0;
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 .swipe1 {
-  background: rgb(86, 124, 228);
+  background: rgb(167, 110, 231);
   z-index: 5;
 }
 .swipe2 {
-  background: rgb(167, 110, 231);
+  background: rgb(86, 124, 228);
   z-index: 4;
 }
 .swipe3 {
   background: rgb(255, 139, 93);
   z-index: 3;
 }
-a {
-  text-decoration: none;
-  color: #17181a;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-#cophi:hover {
-  text-decoration: none;
-}
 
 @media screen and (max-width: 1500px) {
   .hero-img {
     height: 50vh;
   }
-  .project-text h1 {
+  .fashion-text h1 {
     font-size: 2rem;
     padding: 1rem 0rem;
   }
-  .project-text p {
+  .fashion-text p {
     font-size: 1.2rem;
   }
-  .project-img img {
+  .fashion-img img {
     height: 50vh;
     object-position: top;
   }
@@ -433,7 +310,6 @@ a:hover {
     width: 100%;
     margin: 0;
   }
-
   .slide {
     display: block;
     width: 100%;
@@ -463,14 +339,16 @@ a:hover {
     width: 100%;
     text-align: center;
   }
-  .project-text p {
+  .fashion-text p {
     margin-bottom: 5rem;
     padding: 0;
   }
-  .project-text h1 {
+  .fastion-text h1 {
     margin: 2rem 0rem;
   }
-
+  .fashion-nr {
+    font-size: 8rem;
+  }
   .nav-bar {
     display: block;
   }
@@ -479,12 +357,12 @@ a:hover {
     text-align: center;
   }
   .contact h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
   }
   .contact p {
     font-size: 1.2rem;
-    padding: 5rem;
+    padding: 2rem;
     text-align: center;
   }
 }

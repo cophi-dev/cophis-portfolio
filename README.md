@@ -35,6 +35,10 @@ JavaScript animations with GSAP
 ## Contact
 
 <!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
+- [Git profile](https://github.com/cophi-dev "Cophi Dev")
+- [Email](mailto:cophi.dev@gmail.com?subject=Hi "Hi!")
+- [Website](https://phillipp.eu "Welcome")
+- [LinkedIn](https://www.linkedin.com/in/phillipp-zarindast-35739a244/ "Welcome")
 
 
 

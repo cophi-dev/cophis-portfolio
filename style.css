@@ -126,8 +126,12 @@ main {
 .hero-desc h1 {
   font-family: "Abril Fatface";
   font-size: 5rem;
-  align-items: center;
   color: white;
+}
+
+#down {
+  align-self: center;
+  padding: 4rem 1rem;
 }
 
 .hero-desc p {
@@ -148,6 +152,7 @@ main {
   align-self: auto;
   cursor: none;
   margin-right: 2rem;
+  margin-top: 2rem;
 }
 .infos a {
   padding: 1rem 2rem;
@@ -224,7 +229,6 @@ main {
 .cursor.nav-active {
   background: rgb(86, 124, 228);
   transform: scale(3);
-  z-index: 10;
   position: absolute;
 }
 .cursor.explore-active {
@@ -332,10 +336,6 @@ body.hide {
   color: white;
 }
 
-.slide {
-  z-index: 10;
-}
-
 .project1 h1 {
   color: rgb(255, 139, 93);
 }
@@ -343,13 +343,13 @@ body.hide {
   color: rgb(167, 110, 231);
 }
 .project3 h1 {
-  color: rgb(86, 124, 228);
+  color: rgb(207, 228, 86);
 }
 .project4 h1 {
   color: rgb(228, 86, 86);
 }
 .project5 h1 {
-  color: rgb(70, 155, 58);
+  color: rgb(40, 124, 203);
 }
 .project6 h1 {
   color: white;

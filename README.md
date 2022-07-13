@@ -1,4 +1,4 @@
-# code/phi. portfolio page
+# code/phi. personal portfolio page
 
 ## Table of Contents
 
@@ -10,7 +10,9 @@
 
 ## Overview
 
-<img width="1638" alt="Screenshot 2022-07-14 at 01 15 47" src="https://user-images.githubusercontent.com/83501136/178852703-053bda11-7149-4969-a787-86cd80d5d7f6.png">
+<img width="1638" alt="portfolio screenshot" src="https://user-images.githubusercontent.com/83501136/178852703-053bda11-7149-4969-a787-86cd80d5d7f6.png">
+
+https://phillipp.eu
 
 <!-- TODO: Add a screenshot of the live project.
     1. Link to a 'live demo.'
@@ -23,6 +25,9 @@
 
 <!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
 
+JavaScript animations with GSAP
+
+
 ## Features
 
 <!-- TODO: List what specific 'user problems' that this application solves. -->
@@ -30,6 +35,8 @@
 ## Contact
 
 <!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
+
+
 
 ## Acknowledgements
 

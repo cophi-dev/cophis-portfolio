@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .badges img {
@@ -75,6 +79,7 @@ main {
   flex: 1;
   flex-basis: 25rem;
   overflow: hidden;
+  text-align: center;
 }
 
 .hero-img img {
@@ -85,6 +90,8 @@ main {
 }
 #svg {
   object-fit: fill;
+  align-self: center;
+  max-width: 30rem;
 }
 
 .outro {
@@ -110,11 +117,11 @@ main {
 }
 
 .profile-span {
-  color: rgb(86, 124, 228);
+  color: rgb(40, 124, 203);
 }
 
 .projects-span {
-  color: rgb(226, 125, 53);
+  color: rgb(72, 180, 140);
 }
 .project1-span {
   color: rgb(167, 110, 231);
@@ -227,14 +234,14 @@ main {
   transform-origin: 75% 75%;
 }
 .cursor.nav-active {
-  background: rgb(86, 124, 228);
+  background: rgb(40, 124, 203);
   transform: scale(3);
   position: absolute;
 }
-.cursor.explore-active {
+/* .cursor.explore-active {
   background: rgba(255, 255, 255, 0.9);
   transform: scale(3);
-}
+} */
 .cursor-text {
   position: absolute;
   top: 50%;
@@ -256,10 +263,10 @@ main {
   transform: translateY(100%);
 }
 .t-swipe1 {
-  background: rgb(86, 124, 228);
+  background: rgb(40, 124, 203);
 }
 .t-swipe2 {
-  background: rgb(226, 125, 53);
+  background: rgb(72, 180, 140);
 }
 
 .scrollmagic-pin-spacer {
@@ -337,13 +344,13 @@ body.hide {
 }
 
 .project1 h1 {
-  color: rgb(255, 139, 93);
+  color: rgb(228, 86, 86);
 }
 .project2 h1 {
-  color: rgb(167, 110, 231);
+  color: rgb(40, 124, 203);
 }
 .project3 h1 {
-  color: rgb(207, 228, 86);
+  color: rgb(72, 180, 140);
 }
 .project4 h1 {
   color: rgb(228, 86, 86);
@@ -371,15 +378,16 @@ body.hide {
   transform: translateX(100%);
 }
 .swipe1 {
-  background: rgb(86, 124, 228);
+  background: rgb(40, 124, 203);
   z-index: 5;
 }
 .swipe2 {
-  background: rgb(167, 110, 231);
+  background: rgb(228, 86, 86);
   z-index: 4;
 }
 .swipe3 {
-  background: rgb(255, 139, 93);
+  background: rgb(72, 180, 140);
+
   z-index: 3;
 }
 a {

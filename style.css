@@ -523,4 +523,8 @@ a:hover {
     height: 120%;
     top: 0%;
   }
+
+  #contact-burger-text {
+    display: none;
+  }
 }

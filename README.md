@@ -24,6 +24,13 @@ I created this minimalistic and interactive portfolio website. Besides basic inf
  -->
 
 ### Built With
+<p float="left">
+    <img src="https://user-images.githubusercontent.com/83501136/178947435-7f15c04b-2674-479b-9710-0d89b063c6e3.png" style="width:40px;"/>
+    <img src="https://user-images.githubusercontent.com/83501136/178947430-fb438ba4-b720-4726-83a7-47490046f89c.png" style="width:40px"/>
+    <img src="https://user-images.githubusercontent.com/83501136/178947438-4795fd22-ad7f-48a2-87f0-0bf8ac8e8fe2.png" style="width:40px;"/>
+    <!--<img src="https://user-images.githubusercontent.com/83501136/178947440-5a78eb74-f2d6-4ede-84c3-989dbcb4749c.png" style="width:40px;"/> -->
+</p>
+
 
 <!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
 
